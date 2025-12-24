@@ -1,6 +1,33 @@
+Already github
+==============
+git clone (url)
+//code updade
 git status
 git add . / git add "file name"
 git commit -m "massage"
 git push /git push -u origin main
 git branch
 git checkout -b (branch name)
+
+local crate floder and new repo
+===============
+git init
+git remote add origin url (github repo)
+git remote show origin
+============
+git status
+git add .
+git commit -m "massage"
+git push
+
+//history
+git log
+
+control + z(undo)
+control + y(redo)
+
+control + d(same word select)
+
+alt + click(same time wride)
+
+control + / (comment)
