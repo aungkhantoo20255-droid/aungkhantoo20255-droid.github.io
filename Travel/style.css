@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Static nav */
+.nav_logo img {
+    width: 180px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+nav ul {
+    float: right;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.book_now {
+    border: 1px solid #212eba;
+    border-radius: 5px;
+    background-color: #212eba;
+    color: #fff !important;
+}
+
+.book_now:hover {
+    background-color: #fff;
+    color: #212eba !important;
+    transition: 0.5s;
+}
+
+.nav_container {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(77, 65, 65, 0.4);
+}
+.nav_container{
+    margin-bottom: 20px;
+}
+.nav:focus{
+    color: #790707;
+
+}
+
+.section_all {
+    margin-top: 30px;
+
+}
+
+section h1 {
+    position: absolute;
+    font-size: 50px;
+    top: 300px;
+    right: 400px;
+    color: #f4f4f4;
+}
+
+.search_destination {
+    position: absolute;
+    top: 350px;
+    right: 550px;
+    height: 30px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #1d0775;
+    box-shadow: 0 4px 10px rgba(84, 32, 32, 0.4);
+}
+
+.search_destination:focus {
+    outline: none;
+
+
+}
+
+.search_btn {
+    position: absolute;
+    top: 350px;
+    right: 469px;
+    height: 33px;
+    width: 80px;
+    background-color: #212eba;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.search_btn:hover {
+    background-color: #aeabab;
+    color: #000000;
+    border: 1px solid #212eba;
+    transition: 0.5s;
+}
+
+.popular {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.grid_one {
+    background-color: #fff;
+    box-shadow: 0 60px 0 10px rgba(207, 180, 180, 0.4);
+
+}
+
+.grid_one {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+.india {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.india img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 20px 0 20px 8px rgba(95, 88, 88, 0.4);
+}
+
+.india img:hover {
+    display: block;
+    transform: scale(1.1);
+}
+
+.h2_center {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.grid_one a {
+    text-decoration: none !important;
+    color: #000;
+}

@@ -1,0 +1,56 @@
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+.one {
+    border: 10px solid gold;
+}
+
+.two {
+    border-width: 5px 10px 15px 20px;
+    border-style: solid;
+}
+
+.two {
+    margin: 30px;
+}
+
+.one {
+    margin: 20px 40px 90px 30px;
+}
+
+.inline {
+    border: 2px solid red;
+    width: 400px;
+    display: inline-block;
+}
+
+.block {
+    display: inline;
+    margin: 20px;
+    border: 5px solid black;
+    width: 400px;
+}
+
+.offline {
+    font-family: "Allura-Regular", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Allura-Regular";
+    src: url("Allura-Regular.ttf");
+
+}
+
+.offline {
+    font-family: "Allura-Regular"
+}
+
+.online {
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+}

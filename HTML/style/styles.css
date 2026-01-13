@@ -1,0 +1,71 @@
+h1 {
+    text-align: center;
+    color: rgb(50, 208, 108);
+}
+
+b {
+    color: #233d09;
+}
+
+* {
+    border: rgb(5, 4, 4);
+    text-transform: uppercase;
+    li
+}
+
+#ckass {
+    color: #e60f0f;
+}
+
+.one {
+    color: #043df9;
+}
+
+a[title=brother] {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.classroom {
+    color: darkgreen;
+}
+
+#hello a {
+    color: brown;
+}
+
+#bool>a {
+    color: green;
+    text-transform: capitalize;
+}
+
+#bool>span {
+    color: aqua;
+}
+
+#bool>span>a {
+    color: #233d09;
+}
+
+a:link {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: double;
+    color: rgb(0, 0, 0);
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: rgb(255, 0, 0);
+    text-decoration: line-through;
+}
+
+:target {
+    color: #043df9;
+}
