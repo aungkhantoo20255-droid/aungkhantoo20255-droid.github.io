@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // let q = 18;
@@ -27,19 +29,114 @@
 
         // console.log(!num)
 
-        let number = prompt("enter 100 and greater");
-        if (number > 100){
-            document.write("This is greater than 100");
-        }
-        else if(number == 100){
-            document.write( "is 100");
-        }
-        else{
-            document.write( "lol pal"); 
-               }
-        console.log(number)
+        // let number = prompt("enter 100 and greater");
+        // if (number > 100){
+        //     document.write("This is greater than 100");
+        // }
+        // else if(number == 100){
+        //     document.write( "is 100");
+        // }
+        // else{
+        //     document.write( "lol pal");
+        //        }
+        // console.log(number)
 
+        // let name = "Aung khant oo ";
+        // let lest = " bar bar nyar nyar";
+
+        // console.log(name + lest);
+
+        // document.write('<h1>' + name + '</h1><h2>' + lest + '</h2>')
+        // document.write(`<h3>My name is ${name}</h3><h2>My crush is ${lest}</h2>`);
+
+        // let region = "I'm from yangon";
+        // console.log(region.replace('yangon', 'mandalay'));
+        // document.write(region.replace('yangon', 'mandalay'))
+        // let arry1 = ["a","b","c","d" ,"h"];
+        // let arry2 = ["aung", "khant", "oo"];
+        // let arry3 = ["goo" , "hel" , "fit" , "ear", "wioh"];
+
+        // console.log(arry3["23"]);
+        // arry1.push(23);
+        // console.log(arry1);
+        // arry1.pop(arry1);
+        // console.log(arry1);
+        // arry2.unshift("brother");
+        // console.log(arry2);
+        // arry2.shift();
+        // console.log(arry1);
+        // arry3.sort();
+        // console.log(arry3);
+        // arry1.sort().reverse()
+        // console.log(arry1);
+
+        // let arry4 = [ ...arry1, ...arry2 ,...arry3];
+        // console.log(arry4)
+
+        // for (let i = 0; i <= 0; i++) {
+
+        //         for(let h = -5; h < i; h--){
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+
+        // let num = 300;
+        // while (num > 100) {
+        //     document.write(`hello Number ${num}`);
+        //     num -= 50;
+        // }
+
+        // let no = 10;
+        // do {
+        //     document.write(`bar bar nyar nyar ${no} <br>`)
+        //     no -= 2
+        // } while (no < 5);
+
+        // let scerceNo = 7;
+        // let scrchNo = prompt("Enter a Number between 1 and 20");
+
+        // while (scerceNo != scrchNo)
+
+        // let count = 10 ;
+        //     while ( count <= 1){
+        //         console.log(1);
+        //         count--;
+        //     }
+
+        // console.log("Blast off")
+
+        //     function result(num1 , num2){
+        //         let result = num1 - num2;
+        //         return result;
+        //     }
+
+        //     let subREsult = result(123 , 23);
+        //     document.write(subREsult);
+
+        // object
+
+        let hotle = {
+        name : "Aung Khant Hotel",
+        rooms : 50,
+        booked : 20,
+        gym : true,
+        pool : true,
+        roomTYPE : [ Twice, single, chentibi],
+        checkABILITY :function(){
+            result = this.rooms - this.booked
+            return result
+        console.log(checkABILITY);
+
+        }
+            
+        }
+        console.log(hotle)
+        console.log(hotle.checkABILITY)
 
     </script>
+
+
 </body>
+
 </html>
