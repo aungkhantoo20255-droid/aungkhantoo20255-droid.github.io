@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="ear" style="color: red;">This is a paragraph.</p>
+
+    <button onclick="changeText()">Click me</button>
+
+
+    <script>
+        function changeText() {
+            let textNote = document.querySelector("#ear");
+            let nextNote = textNote.getAttribute("style");
+
+            if (nextNote === "color: red;") {
+                textNote.setAttribute("style", "color: blue; font-size: 20px; background-color: yellow;");
+            } else {
+                textNote.setAttribute("style", "color: red;");
+            }
+
+            // textNote.setAttribute("style", "color: blue; font-size: 20px; background-color: yellow;");
+                       // console.log(textNote);
+            // document.body.appendChild(textNote);
+            // console.log(txtNote);
+            
+            // txtNote = document.querySelector("p");
+        }
+    </script>
+</body>
+
+</html>

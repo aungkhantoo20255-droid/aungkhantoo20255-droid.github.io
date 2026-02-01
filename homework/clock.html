@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitsl clock</title>
+    <style>
+        #clock {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: auto;
+            margin-top: 100px;
+            width: 500px;
+            border-radius: 10px;
+            border: 2px solid rgb(13, 102, 13);
+            box-shadow: 10px 10px 30px rgba(56, 130, 77, 0.8);
+        }
+
+        .month {
+            color: rgb(4, 220, 65);
+            font-size: 40px;
+        }
+
+        .date {
+            color: rgb(4, 220, 65);
+            font-size: 40px;
+            margin-left: 40px;
+        }
+
+        .day {
+            color: rgb(4, 220, 65);
+            font-size: 40px;
+            margin-left: 10px;
+        }
+
+        .year {
+            color: rgb(4, 220, 65);
+            font-size: 40px;
+            margin-left: 10px;
+        }
+
+        .hours {
+            color: rgb(4, 220, 65);
+            font-size: 100px;
+        }
+
+        .minutes {
+            color: rgb(4, 220, 65);
+            font-size: 100px;
+            margin-left: 5px;
+        }
+
+        .seconds {
+            color: rgb(4, 220, 65);
+            font-size: 50px;
+            margin-left: 5px;
+        }
+
+        .commer {
+            color: rgb(4, 220, 65);
+            font-size: 30px;
+        }
+
+        .fullcolum {
+            color: rgb(4, 220, 65);
+            font-size: 80px;
+        }
+
+        .fullcolum2 {
+            color: rgb(4, 220, 65);
+            font-size: 50px;
+        }
+        .ampm {
+            color: rgb(3, 255, 74);
+            font-size: 30px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="clock">
+        <!-- <h1>Digital Clock</h1> -->
+        <samp id="month" class="month"></samp>
+        <samp id="date" class="date"></samp>
+        <samp class="commer">,</samp>
+        <samp id="day" class="day">SUN</samp>
+        <samp class="commer">,</samp>
+        <samp id="year" class="year"></samp>
+        <br><br>
+        <samp id="hours" class="hours">10</samp>
+        <samp class="fullcolum">:</samp>
+        <samp id="minutes" class="minutes">39</samp>
+        <samp class="fullcolum2">:</samp>
+        <samp id="seconds" class="seconds">15</samp>
+        <span id="ampm" class="ampm">Am</span>
+
+    </div>
+    <script>
+
+        // date function
+        // month function
+        function monthDate() {
+            let currentDate = new Date();
+            let monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+            let month = currentDate.getMonth();
+            document.getElementById("month").innerText = monthNames[month];
+            console.log(monthNames[month]);
+
+
+
+        }
+        setInterval(monthDate, 1000);
+        //   end month function
+
+        // date function
+
+        function nowDate() {
+            let currentDate = new Date();
+            let date = currentDate.getDate();
+            document.getElementById("date").innerText = date;
+            console.log(date);
+        }
+        setInterval(nowDate, 1000);
+
+        // end date function
+
+        // day function
+        function dayDate() {
+            let currentDay = new Date();
+            let dayNames = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+            let day = currentDay.getDay();
+            document.getElementById("day").innerText = dayNames[day];
+            console.log(dayNames[day]);
+
+        }
+        setInterval(dayDate, 1000);
+        // end day function
+
+        // year function
+
+        function yearDate() {
+            let currentYear = new Date();
+            let year = currentYear.getFullYear();
+            document.getElementById("year").innerText = year;
+            console.log(year);
+        }
+        setInterval(yearDate, 1000);
+
+        // end year function
+
+        // hours function
+        function hourDate() {
+            let currentHour = new Date();
+            let hours = currentHour.getHours();
+            document.getElementById("hours").innerText = hours;
+            console.log(hours);
+            if (hours < 10) {
+                document.getElementById("hours").innerText = "0" + hours;
+            }else{
+                document.getElementById("hours").innerText = hours;
+            }
+        }
+        setInterval(hourDate, 1000);
+        // end hours function\
+
+        // minutes function
+        function minuteDate() {
+            let currentMinute = new Date();
+            let minutes = currentMinute.getMinutes();
+            document.getElementById("minutes").innerText = minutes;
+            console.log(minutes);
+               if (minutes < 10) {
+                document.getElementById("minutes").innerText = "0" + minutes;
+            }else{
+                document.getElementById("minutes").innerText = minutes;
+            }
+        }
+        setInterval(minuteDate, 1000);
+
+        // seconds function
+        function secondDate() {
+            let currentSecond = new Date();
+            let seconds = currentSecond.getSeconds();
+            document.getElementById("seconds").innerText = seconds;
+            console.log(seconds);
+                if (seconds < 10) {
+                 document.getElementById("seconds").innerText = "0" + seconds;
+        }else{
+                 document.getElementById("seconds").innerText = seconds;
+             }
+        }
+        setInterval(secondDate, 1000);
+
+        // end seconds function
+        if (hourDate < 12) {
+            document.getElementById("ampm").innerText = "AM";
+        }else{
+            document.getElementById("ampm").innerText = "PM";
+        }
+
+    </script>
+</body>
+
+</html>
