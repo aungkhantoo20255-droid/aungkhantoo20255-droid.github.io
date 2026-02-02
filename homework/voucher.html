@@ -77,10 +77,10 @@
                 tbody +=
                     `<tr>
                     <td>${i + 1}</td>
-                    <td>$${voucherList[i].subjectName}</td>
-                    <td>$${voucherList[i].subjectPrice}</td>
-                    <td>$${voucherList[i].subjectQty}</td>
-                    <td>$${voucherList[i].subjectTotal}</td>
+                    <td>${voucherList[i].subjectName}</td>
+                    <td>${voucherList[i].subjectPrice}</td>
+                    <td>${voucherList[i].subjectQty}</td>
+                    <td>${voucherList[i].subjectTotal}</td>
                 </tr>`;
                 // console.log(tbody);
                 if (totals === 0)
@@ -89,7 +89,7 @@
                     totals += voucherList[i].subjectTotal;
             }
             document.getElementById("inputData").innerHTML = tbody;
-            document.getElementById("grandTotal").innerHTML = `$${totals}`;
+            document.getElementById("grandTotal").innerHTML = `${totals}`;
         }
     </script>
 </body>
