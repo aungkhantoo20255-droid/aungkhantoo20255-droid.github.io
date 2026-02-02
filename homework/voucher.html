@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher</title>
+    <style>
+        .form {
+            margin: auto;
+            margin-top: 100px;
+            margin-left: 40%;
+            border: 2px solid rgb(13, 102, 13);
+            width: 180px;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="price">Price</label><br>
+        <input type="number" id="price" name="price" min="500"><br><br>
+
+        <label for="qty">Qty</label><br>
+        <input type="number" id="qty" name="qty" min="1"><br><br>
+
+        <button type="button" onclick="showData()">Submit</button>
+    </form>
+
+    <table border="1" style="margin-top: 50px; margin-left: 40%;">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="inputData">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Grand Total</td>
+                <td id="grandTotal"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        var voucherList = [];
+        function showData() {
+            let name = document.getElementById("name").value;
+            let price = document.getElementById("price").value;
+            let qty = document.getElementById("qty").value;
+
+            // object
+            let voucher = {
+                subjectName: name,  //subject name
+                subjectPrice: price,    //price
+                subjectQty: qty,    //quinity
+                subjectTotal: price * qty //grand total
+            };
+
+            voucherList.push(voucher);
+            // console.log(voucherList);
+            let tbody = "";
+            let totals = 0;  //grand total
+            for (let i = 0; i < voucherList.length; i++) {
+                // console.log(voucherList[i]);
+                tbody +=
+                    `<tr>
+                    <td>${i + 1}</td>
+                    <td>$${voucherList[i].subjectName}</td>
+                    <td>$${voucherList[i].subjectPrice}</td>
+                    <td>$${voucherList[i].subjectQty}</td>
+                    <td>$${voucherList[i].subjectTotal}</td>
+                </tr>`;
+                // console.log(tbody);
+                if (totals === 0)
+                    totals = voucherList[i].subjectTotal;       
+                else
+                    totals += voucherList[i].subjectTotal;
+            }
+            document.getElementById("inputData").innerHTML = tbody;
+            document.getElementById("grandTotal").innerHTML = `$${totals}`;
+        }
+    </script>
+</body>
+
+</html>
