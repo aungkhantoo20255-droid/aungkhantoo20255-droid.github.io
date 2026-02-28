@@ -1,0 +1,763 @@
+/* fount */
+    {
+    font-family: "fount_one", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fount_one";
+    src: url("fount/static/PlayfairDisplay-Black.ttf") format("truetype");
+
+}
+
+* {
+    font-family: "fount_one", system-ui;
+
+}
+
+.nav_bar {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* nav start */
+.nav_bar {
+    background-color: #162238;
+    position: fixed;
+    width: 100%;
+}
+
+
+.htila {
+    color: goldenrod;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.hotel {
+    color: goldenrod;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+.nav_active {
+    color: #fffdfa !important;
+}
+
+.nav_active:hover {
+    color: goldenrod !important;
+    text-underline-offset: initial !important;
+}
+
+.active {
+    color: goldenrod !important;
+    text-decoration: underline !important;
+}
+
+
+.nav_button {
+    border: 1px solid #081347 !important;
+    background-color: goldenrod !important;
+    border-radius: 5px;
+}
+
+.nav_button:hover {
+    border: 1px solid goldenrod !important;
+    background-color: #1c2431 !important;
+    color: goldenrod !important;
+    border-radius: 5px;
+}
+
+.nav_togallar {
+    border: 1px solid goldenrod !important;
+    background-color: goldenrod !important;
+    border-radius: 10px;
+}
+
+/* end navbar */
+
+/* carsoual */
+.star_icon {
+    color: #E6BC17;
+    z-index: 1;
+}
+
+.htila_hotel {
+    color: #ffd52c;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.carousel_pTag {
+    color: #fcfcfc;
+    text-shadow: #8d867c;
+    z-index: 1;
+}
+
+.carousel_div {
+    background-image: url(Home_image/nav_out.webp);
+    background-color: #1c2431;
+    filter: brightness(90%);
+    z-index: 0;
+}
+
+.carousel_div h1 {
+    z-index: 1;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.carousel_div p {
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.border_nav {
+    border: 1px solid #1c2431 !important;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: goldenrod;
+    color: #f6f9ff !important;
+
+}
+
+.border_nav:hover {
+    border: 1px solid goldenrod !important;
+    color: #1c2431 !important;
+    background-color: #1c2431 !important;
+    color: goldenrod !important;
+    border-radius: 5px;
+
+}
+
+.nav_button-one {
+    border: 1px solid goldenrod !important;
+    background-color: #1c2431 !important;
+    color: #d4d1cd !important;
+    text-shadow: #081347;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.nav_button-one:hover {
+    border: 1px solid goldenrod !important;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    color: gold !important;
+}
+
+/* safty div */
+
+.safety_div {
+    background-color: #1c2431;
+}
+
+.card_color {
+    background-color: #131d2d;
+    color: #fffdfa;
+    border-radius: 20px;
+}
+
+
+.card_color:hover {
+    border: 1px solid goldenrod;
+}
+
+.icon_card {
+    color: #0c2354;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: #c2a11e;
+}
+
+/* safty end */
+.color12 {
+    background-color: #1c2431;
+    height: 20px;
+
+
+}
+
+/* sinature start */
+.signature_div {
+    background-color: #1c2431;
+}
+
+.signature_div h2 {
+    color: rgb(252, 248, 248);
+    font-weight: 900;
+}
+
+.signature_div p {
+    color: rgb(252, 248, 248);
+    font-size: 13px;
+}
+
+.signatere_underline {
+    width: 200px;
+    height: 5px;
+    background-color: #c2a11e;
+    margin: auto;
+    border-radius: 20px;
+}
+
+/* signatere card */
+.card_color2 {
+    background-color: #131d2d;
+    color: #fffdfa;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-box {
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+
+}
+
+.card-image-top {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.8s ease-in-out;
+
+}
+
+.details_arrow {
+    text-decoration: none;
+    color: #c2a11e;
+    padding-right: 150px;
+    display: inline-block;
+    transition: all 0.8s ease-in-out;
+}
+
+.card_color2:hover {
+    border: 1px solid #c2a11e;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(183, 162, 4, 0.678);
+
+}
+
+.card_color2:hover .card-image-top {
+    transform: scale(1.1);
+}
+
+.card_color2:hover .details_arrow {
+    padding-left: 10px;
+    transform: translateX(10px);
+}
+
+.dula {
+    color: #947718;
+    background-color: rgba(8, 8, 71, 0.678);
+    border: 1px solid #947718;
+    border-radius: 5px;
+    width: 100px;
+}
+
+/* A Culinary Journey */
+.bg_color {
+    background-color: #1c2431;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.bg_color1 {
+    margin: auto;
+    margin-top: 70px !important;
+
+}
+
+.img-box-1 img {
+    height: 100px;
+    border-radius: 10px;
+    transition: all 0.8s ease-in-out;
+    object-fit: cover;
+
+
+}
+
+.img-box-2 img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+    object-fit: cover;
+
+
+}
+
+.img-box-2 {
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.img-box-1 {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-box-1 img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+
+}
+
+.img-box-2 img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+
+}
+
+/* video */
+.video-1 {
+    background-color: #162238;
+
+}
+
+.video_p {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+.video-1 video {
+    filter: brightness(90%);
+    width: 100%;
+    height: 440px;
+
+}
+
+/* footer start */
+.htila-footer {
+    background-color: #162238;
+    /* ဓာတ်ပုံထဲက Dark Green အရောင် */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-title {
+    color: #ffc107;
+    /* Gold/Yellow color for headings */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-link:hover {
+    color: #ffc107;
+}
+
+.newsletter-input {
+    background-color: rgba(248, 246, 246, 0.926);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.btn-join {
+    background-color: goldenrod;
+    color: #061933;
+    border: 1px solid #061933;
+    border: none;
+    padding: 5px 20px;
+}
+
+.btn-join:hover {
+    color: gold !important;
+    border: 1px solid goldenrod;
+}
+
+.footer_social a:hover {
+    color: goldenrod !important;
+}
+
+/* end footer */
+
+/* about page start */
+.back_color {
+    background-color: #1c2b3f !important;
+    color: #f9f9f9 !important;
+    /* bgcolor */
+}
+
+.back_color h2 {
+    color: goldenrod !important;
+    font-weight: 900;
+}
+
+/* ================= VIDEO HERO ================= */
+.video-hero {
+    position: relative;
+    overflow: hidden;
+    height: 55vh;
+    background-color: #1c2b3f;
+}
+
+.video-hero img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    width: 100%;
+    height: 75vh;
+    background: rgba(14, 30, 49, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.video-content {
+    position: relative;
+    z-index: 2;
+}
+
+.img_story {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.text_white {
+    color: #f9f9f9 !important;
+}
+
+/* ================= ICON HOVER ================= */
+.icon-box {
+    transition: 0.4s;
+    color: #f6f9ff;
+    background-color: #0d1d38 !important;
+}
+
+.i1 {
+    color: #c2a11e !important;
+}
+
+.text-white {
+    color: #f6f9ff !important;
+}
+
+.icon-box:hover {
+    transform: translateY(-8px);
+}
+
+/* ================= FADE EFFECT (CSS Only) ================= */
+.fade-section {
+    animation: fadeUp 1s ease-in-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* gallary */
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* room page start */
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #d4af37;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* ROOM CARD */
+.room_section {
+    background-color: #1c2431;
+}
+
+.night {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #c2a11e;
+}
+
+.room_section .card {
+    background-color: #131d2d;
+    color: #fffdfa;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+}
+
+.room_section .card:hover {
+    border: 1px solid #c2a11e;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(183, 162, 4, 0.008);
+}
+
+.room_section .card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s ease-in-out;
+}
+
+.room_section .card_img img:hover {
+    transform: scale(1.1);
+}
+
+.room_section .card-body button {
+    background-color: goldenrod;
+    color: #061933;
+    border: 1px solid #061933;
+    border: none;
+    font-weight: bold;
+}
+
+.room_section .card-body button:hover {
+    color: gold !important;
+    border: 1px solid goldenrod;
+    font-weight: bold;
+    background-color: #162238 !important;
+}
+
+.room_section_title:hover .card_img img {
+    transform: scale(1.1);
+}
+
+/* cantact page start */
+/* တစ်ခုလုံးရဲ့ အခြေခံ အရောင်နဲ့ Font */
+
+.contact_section {
+    background-color: #1c2431;
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    padding-top: 20px;
+}
+
+/* မှန်ကြည်သား Style (Glassmorphism) */
+.glass-card {
+    background: #131d2d;
+    /* ဖြူလွလွ အရောင်မှိန်မှိန် */
+    backdrop-filter: blur(10px);
+    /* နောက်ခံကို ဝါးစေတာ */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* ပါးပါးလျလျ ဘောင် */
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* Icon ဝိုင်းလေးတွေအတွက် */
+.icon-wrapper {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: #1c2b3f !important;
+    color: white;
+}
+
+/* စာသားပုံစံလေးများ */
+.label-text {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #d1cece;
+    text-transform: uppercase;
+}
+
+.info-text {
+    font-weight: 600;
+}
+
+.address-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.sub-text {
+    color: #ece9e9;
+    font-style: italic;
+}
+
+.form-title {
+    color: #ffc107;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+/* Input Fields တွေကို ပြင်တာ */
+.custom-label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: goldenrod;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.custom-input {
+    background: rgba(255, 255, 255, 0.842) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: rgb(11, 9, 9) !important;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+/* Input ကို click နှိပ်လိုက်ရင် ဝါရောင်ပြောင်းတာ */
+.custom-input:focus {
+    border-color: #ffc107 !important;
+    box-shadow: none !important;
+    background: rgba(247, 239, 239, 0.858) !important;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #947718;
+    color: #061933;
+    font-weight: bold;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #061933;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #ffc107;
+    border: 1px solid #0d1d38;
+    /* အပေါ်ကို နည်းနည်းကြွတက်တာ */
+}
+
+/* Map Box */
+.map-box {
+    background: #000;
+    border-radius: 25px;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.map-placeholder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #444;
+    text-align: center;
+}
+
+
+
+/* booking phone */
+.phone {
+    background-color: #1c2431;
+    /* နောက်ခံအပြာရောင် */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booking-card {
+    background-color: #061327;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    color: white;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+}
+
+.btn-submit {
+    background-color: #ffcc00;
+    /* အဝါရောင် Button */
+    color: #000;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #e6b800;
+}
+
+.header-title {
+    color: #ffcc00;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.selected-room {
+    color: #ffcc00;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
